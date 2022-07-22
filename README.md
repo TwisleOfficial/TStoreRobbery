@@ -12,7 +12,7 @@ A Simple script that allows players to rob all 24/7. It adds a simple mini game 
 ### How To Install
 Ive made a simple video for you to follow along to.
 
-https://www.youtube.com/watch?v=qATf2rFK8cM&ab_channel=Twisle
+[https://www.youtube.com/watch?v=qATf2rFK8cM&ab_channel=Twisle](https://youtu.be/qATf2rFK8cM)
 
 If you dont want to watch the video here is how to install it.
 
@@ -24,6 +24,12 @@ Go into the qb-target folder and go into init.lua file. Go to line 27 and set Co
 
 ## Step 3:
 Go into the qb-lock folder and go into client folder. Then go into the client.lua file and delete all of line 1.
+
+### Preview 
+
+![image](https://user-images.githubusercontent.com/102629991/180580748-17f80eee-e240-4632-8404-10e378208209.png)
+![image](https://i.imgur.com/Hqn5n5k.jpg)
+
 
 ### How To Customize
 If you wish to put in more 24/7 or just other spots with a Cash Register then this is what you do
