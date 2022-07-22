@@ -8,7 +8,7 @@ A Simple script that allows players to rob all 24/7. It adds a simple mini game 
 * [qb-lock](https://github.com/Tex27/qb-lock)
 
 ![TStoreRobbery Install](https://cdn.discordapp.com/attachments/997658430816931930/1000182819760373800/171970595-522d7bd63-c0d4-46f09-a984-36d83d7944e3.png)
-[![Video](https://img.youtube.com/vi/qATf2rFK8cM&ab/0.jpg)](https://www.youtube.com/watch?v=qATf2rFK8cM&ab)
+![Video](https://img.youtube.com/vi/qATf2rFK8cM&ab/0.jpg)](https://www.youtube.com/watch?v=qATf2rFK8cM&ab)
 
 ### How To Install
 Ive made a simple video for you to follow along to.
