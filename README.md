@@ -12,7 +12,7 @@ A Simple script that allows players to rob all 24/7. It adds a simple mini game 
 ### How To Install
 Ive made a simple video for you to follow along to.
 
-[https://www.youtube.com/watch?v=qATf2rFK8cM&ab_channel=Twisle](https://youtu.be/qATf2rFK8cM)
+https://youtu.be/qATf2rFK8cM
 
 If you dont want to watch the video here is how to install it.
 
