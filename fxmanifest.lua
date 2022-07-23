@@ -14,3 +14,5 @@ server_scripts {
 shared_scripts {
     'config.lua',
 }
+dependency 'qb-target'
+dependency 'qb-lock'
