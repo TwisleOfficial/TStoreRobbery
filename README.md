@@ -36,6 +36,6 @@ If you wish to put in more 24/7 or just other spots with a Cash Register then th
 
 go into the config.lua file and add this 
 ```
-{['Name'] = "", ['x'] = , ['y'] = , ['z'] = },
+{Name = "", Alert = "", x = , y = , z = },
 ```
 
