@@ -19,19 +19,22 @@ RegisterNetEvent("TStoreRobbery:client:Stealing", function()
     local _ped = PlayerPedId()
     local _pos = GetEntityCoords(_ped)
 
-    for i = 1, #Config.Stores, 1 do
-        if (GetDistanceBetweenCoords(Config.Stores[i].x, Config.Stores[i].y, Config.Stores[i].z, GetEntityCoords(_ped))) < 15 then
+    for _, Stores in pairs(Config.Stores) do
+        if (GetDistanceBetweenCoords(_pos.x, _pos.y, _pos.z, Stores.x, Stores.y, Stores.z, true)) < 15 then
             if _onCoolDown == false then
             if _robbed == false then
                 _robbed = true
-                TriggerServerEvent('TStoreRobber:server:Alert')
+
+                print(Stores.Alert)
+
+                TriggerServerEvent('TStoreRobber:server:Alert', Stores.Alert)
 
                 FreezeEntityPosition(_ped, true)
                 loadAnimDict("amb@prop_human_bum_bin@base")
                 TaskPlayAnim(_ped, "amb@prop_human_bum_bin@base", "base", 8.0, 1.0, -1, 49, 0, 0, 0, 0)
 
                 -- Makes A Big Red Cricle Around The Store
-                local blip = AddBlipForRadius(Config.Stores[i].x, Config.Stores[i].y, Config.Stores[i].z, 276.0)
+                local blip = AddBlipForRadius(Stores.x, Stores.y, Stores.z, 276.0)
                 SetBlipHighDetail(blip, true)
                 SetBlipColour(blip, 1)
                 SetBlipAlpha(blip, 128)
