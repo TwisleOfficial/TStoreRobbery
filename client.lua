@@ -8,6 +8,13 @@
 local _robbed = false
 local _onCoolDown = false
 
+local function loadAnimDict(dict)
+    while (not HasAnimDictLoaded(dict)) do
+        RequestAnimDict(dict)
+        Citizen.Wait(1)
+    end
+end
+
 RegisterNetEvent("TStoreRobbery:client:Stealing", function()
     local _ped = PlayerPedId()
     local _pos = GetEntityCoords(_ped)
@@ -72,13 +79,6 @@ RegisterNetEvent("TStoreRobbery:client:Stealing", function()
         end
     end
 end)
-
-local function loadAnimDict(dict)
-    while (not HasAnimDictLoaded(dict)) do
-        RequestAnimDict(dict)
-        Citizen.Wait(1)
-    end
-end
 
 function ShowNotification(text)
 	SetNotificationTextEntry("STRING")
